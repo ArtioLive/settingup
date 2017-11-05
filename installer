@@ -18,7 +18,7 @@ sudo service status apache2
 sudo apt-get install php-cli
 sudo apt autoremove
 sudo apt-get install mysql-server mysql-client -y
-apt-get install phpmyadmin
+apt-get install phpmyadmin -y
 apt-get install php5-mysql php5-curl php5-gd php5-intl php5-pear php5-imagick php5-imap php5-mcrypt php5-memcache php5-ming php5-ps php5-tidy php5-xmlrpc php5-xsl
 a2enmod rewrite
 sudo service apache2 restart
