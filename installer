@@ -1,2 +1,22 @@
-apt update
-apt upgrade
+#!/bin/bash
+# enable IPv6 support
+echo 1 > /proc/sys/net/ipv6/conf/all/forwarding
+# update and install needed dependencies
+apt-get update && echo 'y'
+apt update -y
+apt upgrade -y
+apt-get -y install sudo cron dos2unix nano zip unzip
+npm install npm@latest -g
+curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
+sudo apt-get install -y nodejs
+apt-get forever
+sudo apt-get update
+sudo apt-get install apache2
+sudo apt-get install mysql-server php5-mysql
+sudo mysql_install_db
+sudo mysql_secure_installation
+sudo apt-get install php5 libapache2-mod-php5 php5-mcrypt
+sudo nano /etc/apache2/mods-enabled/dir.conf
+sudo service apache2 restart
+sudo apt-get install php5-cli
+
