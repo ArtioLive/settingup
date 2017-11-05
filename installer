@@ -17,3 +17,4 @@ sudo service apache2 restart
 sudo service status apache2
 sudo apt-get install php-cli
 sudo apt autoremove
+sudo apt-get install mysql-server mysql-client -y
